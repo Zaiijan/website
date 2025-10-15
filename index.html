@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <div class="page" id="page1">
+    <button onclick="nextPage(2)" class="main-btn zoom">Click!</button>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page hidden" id="page2">
+    <h1>HELLO, WELCOME TO MY FIRST WEBSITE!</h1>
+    <button onclick="nextPage(3)">Next</button>
+  </div>
+
+  <!-- PAGE 3: PERSONAL INFO -->
+  <div class="page hidden" id="page3">
+    <alt="My Picture" class="zoom profile"><h2>Zaijan Lukban Cainag</h2>
+    <img src="503521365_692322103526708_2737536807029798225_n.jpg" alt="My picture" class="zoom"/>
+    <p>Nickname:Zai</p>
+    <p>Age: 16</p>
+    <p>Grade: 11</p>
+    <p>ICT student</p>
+    <button onclick="nextPage(4)">Next</button>
+  </div>
+
+  <!-- PAGE 4: RELIGION -->
+  <div class="page hidden" id="page4">
+    <h2>My Religion</h2>
+    <p>IGLESIA NI CRISTO</p>
+    <img src="552864006_780738891351695_903253575301952135_n.jpg" alt="Iglesia Ni Cristo" class="zoom">
+    <div class="btn-group">
+      <button onclick="prevPage(3)">Back</button>
+      <button onclick="nextPage(5)">Next</button>
+    </div>
+  </div>
+
+  <!-- PAGE 5: ORGANIZATION -->
+  <div class="page hidden" id="page5">
+    <h2>My Organization</h2>
+    <p>SCAN INTERNATIONAL</p>
+    <p>MOTTO: "Saving Lives is our Priority"</p>
+    <img src="514254692_714814094610842_2048844018384838254_n.jpg" alt="SCAN International" class="zoom org-logo">
+
+    <div class="btn-group org-buttons">
+      <button onclick="nextPage(6)">Amateur Radio Operator</button>
+      <button onclick="nextPage(7)">Emergency First Responder</button>
+    </div>
+
+    <div class="btn-group">
+      <button onclick="prevPage(4)">Back</button>
+    </div>
+  </div>
+
+  <!-- PAGE 6: AMATEUR RADIO OPERATOR -->
+  <div class="page hidden" id="page6">
+    <h2>Amateur Radio Operator</h2>
+    <img src="1ef015d8-c90f-4ccb-85c2-627af6f4a739.jpg" alt="NTC Pass Photo" class="zoom">
+    <img src="fa2d5457-50c5-469c-92d1-8c39d9a145ff.jpg" alt="Radio Picture" class="zoom">
+    <div class="btn-group">
+      <button onclick="prevPage(5)">Back</button>
+      <button onclick="nextPage(8)">Next</button>
+    </div>
+  </div>
+
+  <!-- PAGE 7: EMERGENCY FIRST RESPONDER -->
+  <div class="page hidden" id="page7">
+    <h2>Emergency First Responder</h2>
+
+    <!-- Training Pictures -->
+    <div class="img-group training">
+      <img src="efr1.jpg" alt="EFR Training 1" class="zoom">
+      <img src="efr2.jpg" alt="EFR Training 2" class="zoom">
+      <img src="efr3.jpg" alt="EFR Training 3" class="zoom">
+      <img src="efr4.jpg" alt="EFR Training 4" class="zoom">
+      <img src="efr5.jpg" alt="EFR Training 5" class="zoom">
+      <img src="efr6.jpg" alt="EFR Training 6" class="zoom">
+      <img src="efr7.jpg" alt="EFR Training 7" class="zoom">
+    </div>
+
+    <!-- Certificate -->
+    <div class="img-group certificate">
+      <img src="certificate.jpg" alt="EFR Certificate of Completion" class="zoom">
+    </div>
+    
+    <div class="btn-group">
+      <button onclick="prevPage(5)">Back</button>
+      <button onclick="nextPage(8)">Next</button>
+    </div>
+  </div>
+
+  <!-- PAGE 8: THANK YOU PAGE -->
+  <div class="page hidden" id="page8">
+    <h2>Thank you for visiting my website!</h2>
+
+    <!-- Social Media Logos -->
+    <div class="socials">
+      <a href="https://www.facebook.com/Zaijan.Cainag15" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook Logo" class="zoom icon">
+      </a>
+      <a href="https://github.com/https://github.com/Zaiijan" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub Logo" class="zoom icon">
+      </a>
+      <a href="mailto:zaijancainag@gmail.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail Logo" class="zoom icon">
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Created by <strong>Zaijan Cainag</strong></p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
